@@ -1,0 +1,67 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local ACTIVED = Instance.new("TextLabel")
+local AFK = Instance.new("TextLabel")
+local printphatgay = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.BackgroundTransparency = 0.500
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.744000018, 0, 0.232999995, 0)
+main.Size = UDim2.new(0, 160, 0, 223)
+
+ACTIVED.Name = "ACTIVED"
+ACTIVED.Parent = main
+ACTIVED.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+ACTIVED.BackgroundTransparency = 0.500
+ACTIVED.BorderColor3 = Color3.fromRGB(21, 156, 71)
+ACTIVED.Position = UDim2.new(0.00666990271, 0, 0.168723613, 0)
+ACTIVED.Size = UDim2.new(0, 156, 0, 86)
+ACTIVED.Font = Enum.Font.SourceSans
+ACTIVED.Text = "AFK is actived"
+ACTIVED.TextColor3 = Color3.fromRGB(55, 255, 0)
+ACTIVED.TextScaled = true
+ACTIVED.TextSize = 24.000
+ACTIVED.TextStrokeTransparency = 0.000
+ACTIVED.TextWrapped = true
+local ac=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+	ac:CaptureController()ac:ClickButton2(Vector2.new())
+end)
+
+AFK.Name = "AFK"
+AFK.Parent = main
+AFK.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AFK.BackgroundTransparency = 0.500
+AFK.BorderColor3 = Color3.fromRGB(21, 156, 71)
+AFK.Position = UDim2.new(0, 1, 0, 1)
+AFK.Size = UDim2.new(0, 156, 0, 36)
+AFK.Font = Enum.Font.SourceSans
+AFK.Text = "AFK GUI"
+AFK.TextColor3 = Color3.fromRGB(0, 179, 255)
+AFK.TextScaled = true
+AFK.TextSize = 34.000
+AFK.TextStrokeTransparency = 0.000
+AFK.TextWrapped = true
+
+printphatgay.Name = "printphatgay"
+printphatgay.Parent = main
+printphatgay.BackgroundColor3 = Color3.fromRGB(255, 151, 242)
+printphatgay.BackgroundTransparency = 0.500
+printphatgay.BorderColor3 = Color3.fromRGB(21, 156, 71)
+printphatgay.Position = UDim2.new(0, 1, 0.75, 5)
+printphatgay.Size = UDim2.new(0, 156, 0, 50)
+printphatgay.Font = Enum.Font.SourceSans
+printphatgay.Text = "binhphat is gay"
+printphatgay.TextColor3 = Color3.fromRGB(255, 14, 223)
+printphatgay.TextSize = 22.000
+printphatgay.TextWrapped = true
+printphatgay.MouseButton1Down:Connect(function()
+	print('binhphat64 is gay')
+end)
