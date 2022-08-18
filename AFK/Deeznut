@@ -6,7 +6,7 @@ local printphatgay = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGui
 
 main.Name = "main"
 main.Parent = ScreenGui
@@ -15,6 +15,8 @@ main.BackgroundTransparency = 0.500
 main.BorderColor3 = Color3.fromRGB(255, 255, 255)
 main.Position = UDim2.new(0.744000018, 0, 0.232999995, 0)
 main.Size = UDim2.new(0, 160, 0, 223)
+main.Active = true
+main.Draggable = true
 
 ACTIVED.Name = "ACTIVED"
 ACTIVED.Parent = main
